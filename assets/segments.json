@@ -1,0 +1,145 @@
+{
+  "tempo_bpm": 99.38401442307692,
+  "segments": [
+    {
+      "index": 1,
+      "start": 0.0,
+      "end": 6.73,
+      "duration": 6.73,
+      "approx_counts": 11.2,
+      "name": "Intro / Set-up",
+      "description": "Opening pose & entrance \u2014 orient to the floor, find partner connection before the groove drops",
+      "file": "/home/user/workspace/segments/01_intro.mp4"
+    },
+    {
+      "index": 2,
+      "start": 6.73,
+      "end": 16.49,
+      "duration": 9.75,
+      "approx_counts": 16.2,
+      "name": "Phrase 1 (16 cts)",
+      "description": "First swing groove \u2014 initial basic action & travel pattern",
+      "file": "/home/user/workspace/segments/02_phrase.mp4"
+    },
+    {
+      "index": 3,
+      "start": 16.49,
+      "end": 26.36,
+      "duration": 9.87,
+      "approx_counts": 16.3,
+      "name": "Phrase 2 (16 cts)",
+      "description": "Develop the basic \u2014 add styling and partner shape changes",
+      "file": "/home/user/workspace/segments/03_phrase.mp4"
+    },
+    {
+      "index": 4,
+      "start": 26.36,
+      "end": 36.2,
+      "duration": 9.85,
+      "approx_counts": 16.3,
+      "name": "Phrase 3 (16 cts)",
+      "description": "Travel section \u2014 covering floor with the swing rhythm",
+      "file": "/home/user/workspace/segments/04_phrase.mp4"
+    },
+    {
+      "index": 5,
+      "start": 36.2,
+      "end": 47.0,
+      "duration": 10.8,
+      "approx_counts": 17.9,
+      "name": "Phrase 4 (16 cts)",
+      "description": "Build to first musical accent \u2014 preparing for a hit",
+      "file": "/home/user/workspace/segments/05_phrase.mp4"
+    },
+    {
+      "index": 6,
+      "start": 47.0,
+      "end": 57.12,
+      "duration": 10.12,
+      "approx_counts": 16.8,
+      "name": "Phrase 5 \u2014 Hit & Release (16 cts)",
+      "description": "Major musical accent \u2014 sharp shape, then back into groove",
+      "file": "/home/user/workspace/segments/06_phrase.mp4"
+    },
+    {
+      "index": 7,
+      "start": 57.12,
+      "end": 66.66,
+      "duration": 9.54,
+      "approx_counts": 15.8,
+      "name": "Phrase 6 (16 cts)",
+      "description": "Second swing groove \u2014 variation on the basic",
+      "file": "/home/user/workspace/segments/07_phrase.mp4"
+    },
+    {
+      "index": 8,
+      "start": 66.66,
+      "end": 76.56,
+      "duration": 9.89,
+      "approx_counts": 16.4,
+      "name": "Phrase 7 (16 cts)",
+      "description": "Showcase trick / lift / signature move section",
+      "file": "/home/user/workspace/segments/08_phrase.mp4"
+    },
+    {
+      "index": 9,
+      "start": 76.56,
+      "end": 88.47,
+      "duration": 11.91,
+      "approx_counts": 19.7,
+      "name": "Phrase 8 (20 cts)",
+      "description": "Climb in energy \u2014 featured choreography sequence",
+      "file": "/home/user/workspace/segments/09_phrase.mp4"
+    },
+    {
+      "index": 10,
+      "start": 88.47,
+      "end": 98.69,
+      "duration": 10.22,
+      "approx_counts": 16.9,
+      "name": "Phrase 9 (16 cts)",
+      "description": "Big-band break \u2014 playful character moments",
+      "file": "/home/user/workspace/segments/10_phrase.mp4"
+    },
+    {
+      "index": 11,
+      "start": 98.69,
+      "end": 108.76,
+      "duration": 10.08,
+      "approx_counts": 16.7,
+      "name": "Phrase 10 (16 cts)",
+      "description": "Drive toward the finale \u2014 accelerating shapes",
+      "file": "/home/user/workspace/segments/11_phrase.mp4"
+    },
+    {
+      "index": 12,
+      "start": 108.76,
+      "end": 118.68,
+      "duration": 9.92,
+      "approx_counts": 16.4,
+      "name": "Phrase 11 \u2014 Build to Finale (16 cts)",
+      "description": "Crescendo \u2014 biggest tricks land here",
+      "file": "/home/user/workspace/segments/12_phrase.mp4"
+    },
+    {
+      "index": 13,
+      "start": 118.68,
+      "end": 128.59,
+      "duration": 9.92,
+      "approx_counts": 16.4,
+      "name": "Phrase 12 \u2014 Finale Hits (16 cts)",
+      "description": "Final musical hits \u2014 sharp accents and dramatic shapes",
+      "file": "/home/user/workspace/segments/13_phrase.mp4"
+    },
+    {
+      "index": 14,
+      "start": 128.59,
+      "end": 134.36,
+      "duration": 5.76,
+      "approx_counts": 9.5,
+      "name": "Ending Pose",
+      "description": "Last beats \u2014 settle into the closing pose and hold",
+      "file": "/home/user/workspace/segments/14_ending.mp4"
+    }
+  ]
+}

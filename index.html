@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Friend Like Me — Showcase Practice</title>
+<meta name="description" content="Phrase-by-phrase practice app for the Friend Like Me showcase choreography." />
+<link rel="preconnect" href="https://api.fontshare.com" />
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&f[]=gambarino@400&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231a0b2e'/%3E%3Cpath d='M9 22 L16 9 L23 22 M12 17 H20' stroke='%23f4c95d' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <svg class="logo" viewBox="0 0 40 40" aria-label="Friend Like Me logo">
+      <rect width="40" height="40" rx="10" fill="var(--brand)"/>
+      <path d="M11 28 L20 11 L29 28 M15 22 H25" stroke="var(--accent)" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <div class="brand-text">
+      <div class="title">Friend Like Me</div>
+      <div class="subtitle">Showcase Practice · 99 BPM</div>
+    </div>
+  </div>
+  <button class="ghost-btn" id="fullBtn" data-testid="button-full">▶ Full run</button>
+</header>
+
+<main class="layout">
+  <!-- Player -->
+  <section class="player-pane">
+    <div class="video-wrap">
+      <video id="player" playsinline preload="metadata" data-testid="video-player"></video>
+      <div class="count-overlay" id="countOverlay">
+        <div class="count-num" id="countNum">—</div>
+        <div class="count-label">count</div>
+      </div>
+    </div>
+
+    <div class="phrase-meta">
+      <div>
+        <div class="phrase-eyebrow" id="phraseEyebrow">PHRASE 1 OF 14</div>
+        <h1 class="phrase-title" id="phraseTitle">Intro / Set-up</h1>
+        <p class="phrase-focus" id="phraseFocus">Opening pose, entrance, find partner connection before the groove drops.</p>
+      </div>
+      <div class="phrase-stats">
+        <div class="stat"><span class="stat-num" id="statCounts">11</span><span class="stat-label">counts</span></div>
+        <div class="stat"><span class="stat-num" id="statLen">6.7s</span><span class="stat-label">length</span></div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <div class="control-row primary-row">
+        <button class="icon-btn lg" id="prevBtn" title="Previous phrase" data-testid="button-prev">⏮</button>
+        <button class="icon-btn lg play" id="playBtn" title="Play / Pause" data-testid="button-play">▶</button>
+        <button class="icon-btn lg" id="nextBtn" title="Next phrase" data-testid="button-next">⏭</button>
+        <button class="icon-btn lg" id="restartBtn" title="Restart phrase" data-testid="button-restart">⟲</button>
+      </div>
+
+      <div class="control-row">
+        <div class="control-group">
+          <span class="control-label">Speed</span>
+          <div class="speed-pills" id="speedPills">
+            <button data-speed="0.25">¼×</button>
+            <button data-speed="0.5">½×</button>
+            <button data-speed="0.75">¾×</button>
+            <button data-speed="1" class="active">1×</button>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <span class="control-label">Loop</span>
+          <button class="toggle" id="loopBtn" data-testid="button-loop" aria-pressed="true">On</button>
+        </div>
+
+        <div class="control-group">
+          <span class="control-label">Counts</span>
+          <button class="toggle" id="countBtn" data-testid="button-counts" aria-pressed="true">On</button>
+        </div>
+
+        <div class="control-group">
+          <span class="control-label">Mirror</span>
+          <button class="toggle" id="mirrorBtn" data-testid="button-mirror" aria-pressed="false">Off</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4-pass practice loop checklist -->
+    <div class="practice-card">
+      <div class="practice-head">
+        <span>4-Pass Practice Loop</span>
+        <button class="link-btn" id="resetPasses" data-testid="button-reset-passes">Reset</button>
+      </div>
+      <ol class="passes" id="passes">
+        <li><label><input type="checkbox" data-pass="1"><span><b>Pass 1 · Watch only</b> — feel the music, mark the count.</span></label></li>
+        <li><label><input type="checkbox" data-pass="2"><span><b>Pass 2 · Mark through</b> — half-energy walking, no full size.</span></label></li>
+        <li><label><input type="checkbox" data-pass="3"><span><b>Pass 3 · Full out</b> — full frame, full energy.</span></label></li>
+        <li><label><input type="checkbox" data-pass="4"><span><b>Pass 4 · Internalize</b> — eyes closed first 8, eyes open second 8.</span></label></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Phrase list -->
+  <aside class="list-pane">
+    <div class="list-head">
+      <span>Phrases</span>
+      <span class="list-progress" id="listProgress">0 / 14 complete</span>
+    </div>
+    <ol class="phrase-list" id="phraseList"></ol>
+
+    <div class="footer-note">
+      Tempo 99.4 BPM · 1 beat ≈ 0.60s · 8-count ≈ 4.83s.
+      <br/>Built for Julia &amp; partner — drill in chunks of 2, then chain.
+    </div>
+  </aside>
+</main>
+
+<!-- Full-run modal -->
+<div class="modal" id="fullModal" hidden>
+  <div class="modal-card">
+    <button class="close-btn" id="closeFull" data-testid="button-close-full">×</button>
+    <h2>Full Showcase Run</h2>
+    <video id="fullVideo" controls playsinline preload="metadata"></video>
+  </div>
+</div>
+
+<script src="assets/phrases.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
