@@ -20,14 +20,13 @@ This app automated the process of breaking a choreography into musical phrases a
 - **Repeat mode** — auto-rewinds the current phrase
 <br />
 
-
 ## Tech Stack
 
 - **Frontend:** Static HTML / CSS / JavaScript — no framework
 - **Audio:** Web Audio API (metronome)
 - **Hosting:** Vercel (static, global edge CDN)
 - **Built with:** Perplexity Computer (Claude Sonnet 4.6)
-
+<br />
 
 ## Project Structure
 
@@ -44,6 +43,7 @@ dance-app/
     ├── friend-like-me/     # 14 phrase MP4s + full showcase
     └── whole-new-world/    # 11 phrase MP4s + full showcase
 ```
+<br />
 
 ## Run Locally
 
@@ -55,7 +55,7 @@ python3 -m http.server 8765
 ```
 
 No build step. No dependencies. Edit files and refresh.
-
+<br />
 
 ## Deploy
 
@@ -64,13 +64,14 @@ vercel deploy --prod
 ```
 
 The repo includes `vercel.json` configuring static hosting.
-
+<br />
 
 ## Access
 
 <img width="916" height="722" alt="image" src="https://github.com/user-attachments/assets/7327b22a-0872-46f0-8bf2-5765faf2f4b8" />
 
 👉 https://showcase-genie.vercel.app/
+<br />
 
 ## Adding a New Showcase
 
