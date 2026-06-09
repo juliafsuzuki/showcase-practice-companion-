@@ -14,6 +14,7 @@ There is a process for learning a new choreography effectively. One component is
 - **Variable speed** — ¼×, ½×, ¾×, 1× practice tempos
 - **Mirror mode** — flips the video horizontally for follow-along practice
 - **Repeat mode** — auto-rewinds the current phrase
+<br />
 
 
 ## Tech Stack
