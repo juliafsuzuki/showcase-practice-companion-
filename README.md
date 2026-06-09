@@ -1,6 +1,8 @@
 # Personal Assistance - Showcase Genie
 
-I vibe-coded an app to help me practice my Showcase Genie routines. Showcase Genie consists of two showcase choreographies: a Smooth routine danced to A Whole New World and a Rhythm routine danced to Friend Like Me.
+I vibe-coded an app to help me practice my Showcase Genie routines. Showcase Genie consists of two showcase choreographies: 
+- a Smooth routine danced to A Whole New World and
+- a Rhythm routine danced to Friend Like Me.
 
 Learning a new choreography effectively requires a structured approach. One of the most effective ways to do this is to break the choreography into musical phrases—digestible segments that can be practiced individually before gradually combining multiple phrases into longer sequences. By progressively stitching these phrases together, I can eventually master the entire routine.
 
